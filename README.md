@@ -63,11 +63,26 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  I see a 500 Internal Server Error error:
+
+  Open your Rails server log
+  Look for the last request that came through
+  Find the error message and stack trace to identify where the error originated
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  I see an Unexpected end of JSON input error: in the console
+
+  Check your fetch request
+  Check the controller action, and make sure to render json:
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  I see a 404 Not Found error:
+
+  Check the Network Tab on the frontend
+  Check the Rails Server logs in the backend
+  Add a new route to handle the HTTP Verb + Path for this request
+
